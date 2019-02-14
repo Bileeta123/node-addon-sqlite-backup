@@ -1,0 +1,21 @@
+{
+  "name": "node-addon-sqlite-backup",
+  "version": "0.0.1",
+  "description": "Backup sqlite db using the c module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "P.Tharaneetharan",
+  "gypfile": true,
+  "dependencies": {
+    "node-addon-api": "^1.6.2"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.7.0"
+  },
+  "license": "ISC"
+}

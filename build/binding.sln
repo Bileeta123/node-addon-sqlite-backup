@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Projects)", "..\Projects", "{4E92736C-CDAA-14F4-7027-B421ECE7DC10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node-addon-api)", "..\Projects\node-addon-sqlite-backup\node_modules\node-addon-api", "{D29B063C-E160-1CF5-650F-4FED01740EB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node-addon-sqlite-backup)", "..\Projects\node-addon-sqlite-backup", "{0D6557D3-A5BB-2F5F-4038-96FAA3E826C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node_modules)", "..\Projects\node-addon-sqlite-backup\node_modules", "{D859603D-8707-BB64-F34A-738D5F28685D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(src)", "..\Projects\node-addon-sqlite-backup\node_modules\node-addon-api\src", "{06ADAE66-B29F-BC8D-DACE-FDCC60B81FAE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "node-addon-sqlite-backup", "node-addon-sqlite-backup.vcxproj", "{B30E961C-B281-8B6E-4A99-6555CA354344}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB} = {98BDD97F-CFE3-9461-36C6-541A7A0CF7BB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nothing", "..\node_modules\node-addon-api\src\nothing.vcxproj", "{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB}.Debug|x64.ActiveCfg = Debug|x64
+		{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB}.Debug|x64.Build.0 = Debug|x64
+		{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB}.Release|x64.ActiveCfg = Release|x64
+		{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB}.Release|x64.Build.0 = Release|x64
+		{B30E961C-B281-8B6E-4A99-6555CA354344}.Debug|x64.ActiveCfg = Debug|x64
+		{B30E961C-B281-8B6E-4A99-6555CA354344}.Debug|x64.Build.0 = Debug|x64
+		{B30E961C-B281-8B6E-4A99-6555CA354344}.Release|x64.ActiveCfg = Release|x64
+		{B30E961C-B281-8B6E-4A99-6555CA354344}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D6557D3-A5BB-2F5F-4038-96FAA3E826C8} = {4E92736C-CDAA-14F4-7027-B421ECE7DC10}
+		{06ADAE66-B29F-BC8D-DACE-FDCC60B81FAE} = {D29B063C-E160-1CF5-650F-4FED01740EB6}
+		{D859603D-8707-BB64-F34A-738D5F28685D} = {0D6557D3-A5BB-2F5F-4038-96FAA3E826C8}
+		{D29B063C-E160-1CF5-650F-4FED01740EB6} = {D859603D-8707-BB64-F34A-738D5F28685D}
+		{98BDD97F-CFE3-9461-36C6-541A7A0CF7BB} = {06ADAE66-B29F-BC8D-DACE-FDCC60B81FAE}
+	EndGlobalSection
+EndGlobal
