@@ -23,7 +23,11 @@ void BackUpAsyncWorker::Execute() {
 //    std::cout << "-------*************---------";
     //dbFilePath.append(".sqlite");
 
-    const char *backUpFileName = "tmpsqlbk.sqlite";
+   // const char *backUpFileName =  "tmpsqlbk.sqlite";
+
+    char * backUpFileName = new char [outputFileName.length()+1];
+    std::strcpy (backUpFileName, outputFileName.c_str());
+
     dbFileName.append(".sqlite");
     int success = createBackup(dbFileName.c_str(), backUpFileName, xProgress);
     if (success == 1) {
